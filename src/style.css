@@ -1,0 +1,428 @@
+:root {
+  /* fonts */
+  --heading-1: 6.4rem;
+  --heading-2: 4rem;
+  --font-large: 3.2rem;
+  --font-medium: 1.8rem;
+  --font-input: 2rem;
+  --font-normal: 1.6rem;
+  --ff-family: "Rubik", sans-serif;
+
+  --gap-1: 1rem;
+  --gap-2: 2rem;
+  --gap-3: 3rem;
+
+  /* font-weight */
+
+  --fw-700: 700;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  /* colors */
+  --dark: #0d0d2b;
+  --light-dark: rgba(255, 255, 255, 0.1);
+  --btn-blue: #3671e9;
+  --gray: #e0e0e0;
+  --secondary-clr: #2b076e;
+  --card-color: #35068c;
+  --white: #fff;
+  --off-gray: #828282;
+  --off-white: rgb(254, 254, 254);
+  /*  */
+
+  /* fonts */
+  --fs-heading: var(--heading-1);
+  --fs-sub-heading: var(--heading-2);
+  --fs-large: var(--font-large);
+  --fs-medium: var(--font-medium);
+  --fs-normal: var(--font-normal);
+  --fs-input: var(--font-input);
+  --font-family: var(--ff-family);
+  ---light-gray: var(--off-gray);
+  --fw-600: var(--fw-600);
+  /* colors */
+
+  /* font-weight */
+  --fs-weight-400: var(--fw-400);
+  --fs-weight-600: var(--fw-600);
+  --fs-weight-500: var(--fw-500);
+  --clr-primary: var(--dark);
+  --clr-blue: var(--btn-blue);
+  --clr-white: var(--white);
+  --clr-off-white: var(--off-white);
+  --clr-light-dark: var(--light-dark);
+  --clr-secondary: var(--secondary-clr);
+  --card-color: var(--card-color);
+  --clr-gray: var(--gray);
+  --fw-bold: var(--fw-700);
+  /* GAPS */
+  --g-1: var(--gap-1);
+  --g-2: var(--gap-2);
+  --g-3: var(--gap-3);
+  /* GAPS */
+  --ml-1: var(--gap-1);
+  --ml-2: var(--gap-2);
+  --ml-3: var(--gap-3);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  background-color: var(--dark);
+  color: var(--clr-white);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.fs-heading {
+  font-size: var(--fs-heading);
+}
+.fs-sub-heading {
+  font-size: var(--fs-sub-heading);
+}
+.fs-large {
+  font-size: var(--fs-large);
+}
+.fs-medium {
+  font-size: var(--fs-medium);
+}
+.off-gray {
+  color: var(---light-gray);
+}
+.fs-normal {
+  font-size: var(--fs-normal);
+}
+.fs-input {
+  font-size: var(--fs-input);
+}
+.opacity-7 {
+  opacity: 0.7;
+}
+.gray {
+  color: var(--clr-gray);
+}
+.fw-700 {
+  font-weight: var(--fw-bold);
+}
+.fw-400 {
+  font-weight: var(--fs-weight-400);
+}
+.fw-500 {
+  font-weight: var(--fs-weight-500);
+}
+.fw-600 {
+  font-weight: var(--fs-weight-600);
+}
+
+/* colors */
+.clr-primary {
+  color: var(--clr-primary);
+}
+.clr-off-white {
+  color: var(--clr-off-white);
+}
+.clr-blue {
+  color: var(--clr-blue);
+}
+.clr-white {
+  color: var(--clr-white);
+}
+.clr-secondary {
+  color: var(--secondary-clr);
+}
+.clr-card-color {
+  color: var(--card-color);
+}
+.clr-gray {
+  color: var(--clr-gray);
+}
+.clr-light-dark {
+  color: var(--clr-light-dark);
+}
+/* backgrounds */
+
+.bg-primary {
+  background: var(--clr-primary);
+}
+
+.bg-off-white {
+  background: var(--clr-off-white);
+}
+.bg-light-dark {
+  background: var(--clr-light-dark);
+}
+.bg-blue {
+  background: var(--clr-blue);
+}
+.bg-white {
+  background: var(--clr-white);
+}
+.bg-secondary {
+  background: var(--secondary-clr);
+}
+.bg-card-color {
+  background: var(--card-color);
+}
+.bg-gray {
+  background: var(--clr-gray);
+}
+
+.container {
+  max-width: 111rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* padding */
+.pt-4 {
+  padding-top: 4rem;
+}
+.pb-8 {
+  padding-block: 10rem;
+}
+.pb-1 {
+  padding-bottom: var(--g-1);
+}
+.pb-2 {
+  padding-bottom: var(--g-2);
+}
+/* gaps */
+.g-1 {
+  gap: var(--g-1);
+}
+.g-2 {
+  gap: var(--g-2);
+}
+.g-3 {
+  gap: var(--g-3);
+}
+.ml-1 {
+  margin-left: var(--g-1);
+}
+.p-1 {
+  padding: var(--g-1);
+}
+.ml-2 {
+  margin-left: var(--g-2);
+}
+.ml-3 {
+  margin-left: var(--g-3);
+}
+.mr-1 {
+  margin-right: var(--g-1);
+}
+.mr-2 {
+  margin-right: var(--g-2);
+}
+.mr-3 {
+  margin-right: var(--g-3);
+}
+.mt-1 {
+  margin-top: var(--g-1);
+}
+.mt-2 {
+  margin-top: var(--g-2);
+}
+.mt-3 {
+  margin-top: var(--g-3);
+}
+.mb-1 {
+  margin-bottom: var(--g-1);
+}
+.mb-2 {
+  margin-bottom: var(--g-2);
+}
+.mb-3 {
+  margin-bottom: var(--g-3);
+}
+.mr-1 {
+  margin-right: var(--g-1);
+}
+.mr-2 {
+  margin-right: var(--g-2);
+}
+.mr-3 {
+  margin-right: var(--g-3);
+}
+.py-3 {
+  padding: var(--g-3);
+}
+.p-3 {
+  padding: var(--g-3);
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.pt-2 {
+  padding: var(--g-3);
+}
+.pt-1 {
+  padding: var(--g-1);
+}
+.m-1 {
+  margin: var(--g-1);
+}
+.m-2 {
+  margin: var(--g-2);
+}
+.m-3 {
+  margin: var(--g-3);
+}
+.br-1 {
+  border-right: 1px solid var(--gray);
+  opacity: 0.3;
+}
+
+.br-32 {
+  border-radius: 3.2rem;
+}
+.br-16 {
+  border-radius: 1.6rem;
+}
+.btn-padding {
+  padding: 1.4rem 3.2rem;
+}
+.h-30 {
+  height: 3rem;
+}
+.p-30 {
+  padding: 3rem;
+}
+.btn-free-padding {
+  padding: 1.6rem 1.6rem 1.6rem 2.4rem;
+}
+
+.p-save {
+  padding: 0.4rem 1.6rem;
+}
+
+.opacity-1 {
+  opacity: 0.1;
+}
+.opacity-0 {
+  opacity: 1;
+}
+.line-3 {
+  line-height: 2;
+}
+.line-67 {
+  line-height: 7.6rem;
+}
+.max-365 {
+  max-width: 36.5rem;
+}
+
+.mx-435 {
+  max-width: 43rem;
+}
+.mx-942 {
+  max-width: 94.2rem;
+}
+.br-50 {
+  border-radius: 50%;
+}
+.p-more {
+  padding: 1.6rem 2.4rem;
+}
+.p-4 {
+  padding: 3.6rem;
+}
+.blur {
+  backdrop-filter: blur(125px);
+}
+.py-3 {
+  padding-inline: 3rem;
+}
+
+.p-calculate {
+  padding: 1.6rem 3.2rem;
+}
+input,
+select {
+  height: 3.8rem;
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  font-weight: var(--fw-400);
+  color: var(--dark);
+}
+
+input:active,
+input:focus {
+  outline: none;
+}
+
+.br-end {
+  border-radius: 0 0 1.6rem 1.6rem;
+}
+.br-top {
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+.btn-mining {
+  padding: 16px 16px 16px 24px;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: var(--clr-secondary);
+  transition: background-color 500ms ease-in-out;
+  color: var(--white);
+  animation-delay: 50000s;
+}
