@@ -6,6 +6,7 @@ import {
   FourthSection,
   FifthSection,
   SixthSection,
+  MarketSection,
 } from "./components";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
+      <MarketSection />
     </>
   );
 }

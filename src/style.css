@@ -3,14 +3,18 @@
   --heading-1: 6.4rem;
   --heading-2: 4rem;
   --font-large: 3.2rem;
+  --font-semi-large: 2.4rem;
   --font-medium: 1.8rem;
   --font-input: 2rem;
   --font-normal: 1.6rem;
+  --font-size-14: 1.4rem;
   --ff-family: "Rubik", sans-serif;
-
+  --ff-inter: "Inter", "Rubik";
   --gap-1: 1rem;
   --gap-2: 2rem;
   --gap-3: 3rem;
+  --gap-4: 4rem;
+  --gap-5: 5rem;
 
   /* font-weight */
 
@@ -22,19 +26,24 @@
   --dark: #0d0d2b;
   --light-dark: rgba(255, 255, 255, 0.1);
   --btn-blue: #3671e9;
+  --light-green: #42ffff;
   --gray: #e0e0e0;
+  --faded-white: #f2f2f2;
   --secondary-clr: #2b076e;
   --card-color: #35068c;
+  --light-blue: #491f98;
   --white: #fff;
   --off-gray: #828282;
   --off-white: rgb(254, 254, 254);
   /*  */
 
   /* fonts */
+  --font-inter: var(--ff-inter);
   --fs-heading: var(--heading-1);
   --fs-sub-heading: var(--heading-2);
   --fs-large: var(--font-large);
   --fs-medium: var(--font-medium);
+  --fs-semi: var(--font-semi-large);
   --fs-normal: var(--font-normal);
   --fs-input: var(--font-input);
   --font-family: var(--ff-family);
@@ -49,16 +58,21 @@
   --clr-primary: var(--dark);
   --clr-blue: var(--btn-blue);
   --clr-white: var(--white);
+  --clr-light-green: var(--light-green);
   --clr-off-white: var(--off-white);
   --clr-light-dark: var(--light-dark);
   --clr-secondary: var(--secondary-clr);
-  --card-color: var(--card-color);
+  --card-clr: var(--card-color);
   --clr-gray: var(--gray);
+  --clr-light-blue: var(--light-blue);
+  --clr-faded: var(--faded-white);
   --fw-bold: var(--fw-700);
   /* GAPS */
   --g-1: var(--gap-1);
   --g-2: var(--gap-2);
   --g-3: var(--gap-3);
+  --g-4: var(--gap-4);
+  --g-5: var(--gap-5);
   /* GAPS */
   --ml-1: var(--gap-1);
   --ml-2: var(--gap-2);
@@ -132,15 +146,25 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-
+.ff-inter {
+  font-family: var(--font-inter);
+}
 .fs-heading {
   font-size: var(--fs-heading);
 }
 .fs-sub-heading {
   font-size: var(--fs-sub-heading);
+  line-height: 150%;
 }
 .fs-large {
   font-size: var(--fs-large);
+}
+.fs-14 {
+  font-size: var(--font-size-14);
+}
+.fs-semi {
+  font-size: var(--fs-semi);
+  line-height: 2.9rem;
 }
 .fs-medium {
   font-size: var(--fs-medium);
@@ -165,6 +189,7 @@ svg {
 }
 .fw-400 {
   font-weight: var(--fs-weight-400);
+  line-height: 2.8rem;
 }
 .fw-500 {
   font-weight: var(--fs-weight-500);
@@ -180,8 +205,14 @@ svg {
 .clr-off-white {
   color: var(--clr-off-white);
 }
+.clr-faded-white {
+  color: var(--clr-faded);
+}
 .clr-blue {
   color: var(--clr-blue);
+}
+.clr-light-blue {
+  color: var(--clr-light-blue);
 }
 .clr-white {
   color: var(--clr-white);
@@ -189,8 +220,11 @@ svg {
 .clr-secondary {
   color: var(--secondary-clr);
 }
+.clr-light-green {
+  color: var(--clr-light-green);
+}
 .clr-card-color {
-  color: var(--card-color);
+  color: var(--card-clr);
 }
 .clr-gray {
   color: var(--clr-gray);
@@ -203,7 +237,9 @@ svg {
 .bg-primary {
   background: var(--clr-primary);
 }
-
+.bg-light-blue {
+  background-color: var(--clr-light-blue);
+}
 .bg-off-white {
   background: var(--clr-off-white);
 }
@@ -220,7 +256,7 @@ svg {
   background: var(--secondary-clr);
 }
 .bg-card-color {
-  background: var(--card-color);
+  background: var(--card-clr);
 }
 .bg-gray {
   background: var(--clr-gray);
@@ -260,6 +296,9 @@ svg {
 }
 .p-1 {
   padding: var(--g-1);
+}
+.p-2 {
+  padding: var(--g-2);
 }
 .ml-2 {
   margin-left: var(--g-2);
@@ -309,11 +348,17 @@ svg {
 .p-3 {
   padding: var(--g-3);
 }
+.p-4 {
+  padding: var(--g-4);
+}
+.p-5 {
+  padding: var(--g-5);
+}
 .pb-2 {
   padding-bottom: 2rem;
 }
 .pt-2 {
-  padding: var(--g-3);
+  padding: var(--g-2);
 }
 .pt-1 {
   padding: var(--g-1);
@@ -359,10 +404,17 @@ svg {
   opacity: 0.1;
 }
 .opacity-0 {
-  opacity: 1;
+  opacity: 0;
 }
+
 .line-3 {
   line-height: 2;
+}
+.line-2 {
+  line-height: 2rem;
+}
+.line-17 {
+  line-height: 1.7rem;
 }
 .line-67 {
   line-height: 7.6rem;
@@ -425,4 +477,10 @@ input:focus {
   transition: background-color 500ms ease-in-out;
   color: var(--white);
   animation-delay: 50000s;
+}
+.card:hover .first-btn {
+  display: flex;
+}
+.card:hover .second-btn {
+  display: none;
 }

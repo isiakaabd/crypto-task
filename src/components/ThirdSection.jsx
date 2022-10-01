@@ -8,14 +8,11 @@ const ThirdSection = () => {
       </div>
       <div className="align-self-center right flex-1 ">
         <p className="fs-sub-heading fw-700">Why you should choose CRAPPO</p>
-        <p className="fs-normal gray mt-2">
+        <p className="fs-normal gray mt-2 mb-3">
           Experience the next generation cryptocurrency platform. No financial
           borders, extra fees, and fake reviews.
         </p>
-        <a
-          href="#"
-          className="bg-blue mt-2 d-inline-block fs-medium br-32 fw-500 p-more"
-        >
+        <a href="#" className="bg-blue fs-medium br-32 fw-500 p-more">
           Learn More
         </a>
       </div>

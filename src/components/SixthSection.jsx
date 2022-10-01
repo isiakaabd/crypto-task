@@ -7,7 +7,7 @@ import etherum from "../assets/etherum.png";
 // "../../assets/bitcoin.png";
 const SixthSection = () => {
   return (
-    <div className="bg-off-white" style={{ height: "150rem" }}>
+    <div className="bg-off-white" style={{ paddingBottom: "10rem" }}>
       <div className="bg-white mx-auto mx-942 clr-primary pt-2  filter br-end">
         <p className="clr-blue fs-normal fw-500 pb-2">
           ESTIMATED 24 HOUR REVENUE:
@@ -28,13 +28,13 @@ const SixthSection = () => {
       <div className="container flex g-3 flex-nowrap justify-between">
         <CoinCard
           icon={bitcoin}
-          name="BITCOIN"
+          name="Bitcoin"
           abb="BTC"
           btnValue="Start mining"
           word="  Digital currency in which a record of transactions is maintained."
         />
         <CoinCard
-          icon={bitcoin}
+          icon={etherum}
           name="Ethereum"
           abb="ETH"
           btnValue="Start mining"
