@@ -3,7 +3,7 @@ const Header = () => {
   return (
     <header className="bg-primary p-30">
       <div className="container flex align-center">
-        <a className="flex align-center fw-600 fs-medium g-2" href="#">
+        <a className="flex align-center ff-inter fw-600 fs-medium g-2" href="#">
           <img src={logo} /> CRAPPO
         </a>
         <nav className="primary-nav ml-auto flex align-center ">

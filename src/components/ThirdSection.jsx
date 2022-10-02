@@ -12,9 +12,12 @@ const ThirdSection = () => {
           Experience the next generation cryptocurrency platform. No financial
           borders, extra fees, and fake reviews.
         </p>
-        <a href="#" className="bg-blue fs-medium br-32 fw-500 p-more">
+        <button
+          href="#"
+          className="bg-blue clr-white fs-medium br-32 fw-500 p-more"
+        >
           Learn More
-        </a>
+        </button>
       </div>
     </div>
   );

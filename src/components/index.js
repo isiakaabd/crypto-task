@@ -6,3 +6,7 @@ export { default as FourthSection } from "./FourthSection";
 export { default as FifthSection } from "./FifthSection";
 export { default as SixthSection } from "./SixthSection";
 export { default as MarketSection } from "./MarketSection";
+export { default as DetailsSection } from "./DetailsSection";
+export { default as ProfitSection } from "./ProfitSection";
+export { default as Mining } from "./Mining";
+export { default as Footer } from "./Footer";

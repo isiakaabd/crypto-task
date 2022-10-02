@@ -18,13 +18,13 @@ const UpperSection = () => {
           Buy and sell cryptocurrencies, trusted by 10M wallets with over $30
           billion in transactions.
         </p>
-        <a
+        <button
           href="#"
-          className="flex g-2 mx-20 flex-nowrap align-center  fs-medium  btn-free-padding mt-3 bg-blue br-32 fw-500"
+          className="flex g-2 clr-white mx-20 flex-nowrap align-center  fs-medium  btn-free-padding mt-3 bg-blue br-32 fw-500"
         >
           Try for Free
           <img src={logo} alt="arrow-forward" />
-        </a>
+        </button>
       </div>
 
       <div className="right flex-1">

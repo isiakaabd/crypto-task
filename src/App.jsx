@@ -7,6 +7,10 @@ import {
   FifthSection,
   SixthSection,
   MarketSection,
+  DetailsSection,
+  ProfitSection,
+  Mining,
+  Footer,
 } from "./components";
 
 function App() {
@@ -20,6 +24,10 @@ function App() {
       <FifthSection />
       <SixthSection />
       <MarketSection />
+      <DetailsSection />
+      <ProfitSection />
+      <Mining />
+      <Footer />
     </>
   );
 }

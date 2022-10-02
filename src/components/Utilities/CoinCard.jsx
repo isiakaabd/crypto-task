@@ -13,15 +13,19 @@ const CoinCard = ({ icon, name, word, abb, btnValue }) => {
         <span className="opacity-7 fs-medium">{abb}</span>
       </div>
       <p className="fs-normal fw-400 mt-2 text-center">{word} </p>
-      <a
+      <button
         href="#"
-        className="g-2 mx-20 none  first-btn   mb-2 flex-nowrap align-center  fs-medium  btn-mining mt-3 bg-blue br-32 fw-500"
+        className="g-2 mx-20 none clr-white first-btn   mb-2 flex-nowrap align-center  fs-medium  btn-mining mt-3 bg-blue br-32 fw-500"
       >
         {btnValue}
         <img src={logo} alt="arrow-forward" />
-      </a>
+      </button>
       <a href="#">
-        <img src={arrow} className="mt-3 mb-2 second-btn" alt="arrow-forward" />
+        <img
+          src={arrow}
+          className="mt-3  mb-2 second-btn"
+          alt="arrow-forward"
+        />
       </a>
     </div>
   );

@@ -11,14 +11,13 @@ const MarketSection = () => {
       <div className="container flex g-3">
         <div className="left pt-2 flex-1">
           <p className="fw-700 fs-large">Invest Smart</p>
-          <p className="mt-2 gray fs-normal fw-400 mb-1">
+          <p className="mt-2 gray fs-normal fw-400 mb-3">
             Get full statistic information about the behaviour of buyers and
-            sellers will help you to make the decision.{" "}
+            sellers will help you to make the decision.
           </p>
-          <a href="#" className="bg-blue mt-1 fs-medium br-32 fw-500 p-more">
+          <button className="br-32 bg-blue fs-medium fw-500 clr-white p-more">
             Learn More
-          </a>
-          <p></p>
+          </button>
         </div>
         <div className="right flex-1">
           <div className="bg-card-color p-3 br-16">

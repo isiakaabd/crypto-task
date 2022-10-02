@@ -11,12 +11,12 @@ const MainCard = () => {
           <option value="TH/s">TH/s</option>
         </select>
 
-        <a
+        <button
           href=""
           className="br-32 bg-blue fs-medium clr-white fw-500 p-calculate"
         >
           Calculate
-        </a>
+        </button>
       </div>
     </div>
   );

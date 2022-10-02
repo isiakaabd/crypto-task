@@ -15,6 +15,11 @@
   --gap-3: 3rem;
   --gap-4: 4rem;
   --gap-5: 5rem;
+  --gap-6: 6rem;
+  --gap-7: 7rem;
+  --gap-8: 8rem;
+  --gap-9: 9rem;
+  --gap-10: 10rem;
 
   /* font-weight */
 
@@ -33,6 +38,7 @@
   --card-color: #35068c;
   --light-blue: #491f98;
   --white: #fff;
+  --linear: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
   --off-gray: #828282;
   --off-white: rgb(254, 254, 254);
   /*  */
@@ -64,6 +70,7 @@
   --clr-secondary: var(--secondary-clr);
   --card-clr: var(--card-color);
   --clr-gray: var(--gray);
+  --clr-linear: var(--linear);
   --clr-light-blue: var(--light-blue);
   --clr-faded: var(--faded-white);
   --fw-bold: var(--fw-700);
@@ -73,6 +80,11 @@
   --g-3: var(--gap-3);
   --g-4: var(--gap-4);
   --g-5: var(--gap-5);
+  --g-6: var(--gap-6);
+  --g-7: var(--gap-7);
+  --g-8: var(--gap-8);
+  --g-9: var(--gap-9);
+  --g-10: var(--gap-10);
   /* GAPS */
   --ml-1: var(--gap-1);
   --ml-2: var(--gap-2);
@@ -114,6 +126,9 @@ body {
   background-color: var(--dark);
   color: var(--clr-white);
 }
+img {
+  cursor: pointer;
+}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -130,7 +145,15 @@ svg {
   max-width: 100%;
   display: block;
 }
-
+button {
+  outline: none;
+  cursor: pointer;
+  border: inherit;
+}
+input::placeholder {
+  font: inherit;
+  color: inherit;
+}
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -154,7 +177,6 @@ svg {
 }
 .fs-sub-heading {
   font-size: var(--fs-sub-heading);
-  line-height: 150%;
 }
 .fs-large {
   font-size: var(--fs-large);
@@ -246,6 +268,9 @@ svg {
 .bg-light-dark {
   background: var(--clr-light-dark);
 }
+.bg-linear {
+  background-color: var(--clr-linear);
+}
 .bg-blue {
   background: var(--clr-blue);
 }
@@ -281,6 +306,12 @@ svg {
 .pb-2 {
   padding-bottom: var(--g-2);
 }
+.p-btn {
+  padding: 1.4rem 3.2rem;
+}
+.p-28 {
+  padding-block: 2.8rem;
+}
 /* gaps */
 .g-1 {
   gap: var(--g-1);
@@ -290,6 +321,15 @@ svg {
 }
 .g-3 {
   gap: var(--g-3);
+}
+.g-4 {
+  gap: var(--g-4);
+}
+.g-5 {
+  gap: var(--g-5);
+}
+.g-6 {
+  gap: var(--g-6);
 }
 .ml-1 {
   margin-left: var(--g-1);
@@ -333,6 +373,9 @@ svg {
 .mb-3 {
   margin-bottom: var(--g-3);
 }
+.mb-4 {
+  margin-bottom: var(--g-4);
+}
 .mr-1 {
   margin-right: var(--g-1);
 }
@@ -343,10 +386,31 @@ svg {
   margin-right: var(--g-3);
 }
 .py-3 {
-  padding: var(--g-3);
+  padding-block: var(--g-3);
+}
+.py-5 {
+  padding: var(--g-5);
+}
+.py-6 {
+  padding-block: var(--g-6);
+}
+.pt-6 {
+  padding-top: var(--g-6);
 }
 .p-3 {
   padding: var(--g-3);
+}
+.pr-3 {
+  padding-right: var(--g-3);
+}
+.pr-5 {
+  padding-right: var(--g-5);
+}
+.pr-6 {
+  padding-right: var(--g-6);
+}
+.pr-10 {
+  padding-right: var(--g-10);
 }
 .p-4 {
   padding: var(--g-4);
@@ -354,8 +418,11 @@ svg {
 .p-5 {
   padding: var(--g-5);
 }
+.p-6 {
+  padding: var(--g-6);
+}
 .pb-2 {
-  padding-bottom: 2rem;
+  padding-bottom: var(--g-2);
 }
 .pt-2 {
   padding: var(--g-2);
@@ -413,6 +480,9 @@ svg {
 .line-2 {
   line-height: 2rem;
 }
+.line-4 {
+  line-height: 3rem;
+}
 .line-17 {
   line-height: 1.7rem;
 }
@@ -441,8 +511,9 @@ svg {
 .blur {
   backdrop-filter: blur(125px);
 }
-.py-3 {
-  padding-inline: 3rem;
+
+.py-6 {
+  padding-block: var(--g-6);
 }
 
 .p-calculate {
@@ -483,4 +554,24 @@ input:focus {
 }
 .card:hover .second-btn {
   display: none;
+}
+
+/* backgrounds */
+.bg-image {
+  background: url("./assets/eth.png") 2rem 0 no-repeat,
+    url("./assets/bit.png") bottom right no-repeat;
+  background-color: var(--clr-blue);
+}
+
+.nav-links li,
+.resources-links li {
+  list-style: none;
+  color: var(--clr-faded);
+  font-size: var(--font-normal);
+  font-weight: var(--fw-400);
+  line-height: 3.8rem;
+  padding: 0.5rem 0;
+}
+.resources-links li {
+  color: var(--clr-gray);
 }
