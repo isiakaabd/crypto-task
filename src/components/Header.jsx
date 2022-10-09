@@ -1,12 +1,18 @@
 import logo from "./../assets/logo.png";
+import { BiMenu } from "react-icons/bi";
+import { FaTimes } from "react-icons/fa";
+import { useState } from "react";
+
 const Header = () => {
+  const [state, setState] = useState(true);
+  const handleClick = () => setState(!state);
   return (
-    <header className="bg-primary p-30">
-      <div className="container flex align-center">
+    <header className="bg-primary">
+      <div className="container flex align-center justify-between">
         <a className="flex align-center ff-inter fw-600 fs-medium g-2" href="#">
           <img src={logo} /> CRAPPO
         </a>
-        <nav className="primary-nav ml-auto flex align-center ">
+        <nav className="primary-nav ml-auto flex align-center sm-none">
           <ul
             aria-label="nav-list"
             role="list"
@@ -36,6 +42,20 @@ const Header = () => {
             </div>
           </ul>
         </nav>
+        {/* <div className="ml-auto lg-hidden sm-show "> */}
+        {state ? (
+          <BiMenu
+            size={30}
+            className="position-relative sm-show"
+            onClick={handleClick}
+          />
+        ) : (
+          <FaTimes
+            size={30}
+            onClick={handleClick}
+            className="position-relative sm-show"
+          />
+        )}
       </div>
     </header>
   );

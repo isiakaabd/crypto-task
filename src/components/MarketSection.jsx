@@ -4,11 +4,14 @@ import arrowUp from "../assets/arrow-up.png";
 
 const MarketSection = () => {
   return (
-    <div className="bg-secondary fs-sub-heading p-5">
-      <p className="text-center fw-700 mx-auto" style={{ maxWidth: "75.8rem" }}>
+    <div className="bg-secondary fs-sub-heading p-2 ">
+      <p
+        className="text-center fw-700 mx-auto p-2"
+        style={{ maxWidth: "75.8rem" }}
+      >
         Market sentiments, portfolio, and run the infrastructure of your choice
       </p>
-      <div className="container flex g-3">
+      <div className="container flex g-3 sm-column">
         <div className="left pt-2 flex-1">
           <p className="fw-700 fs-large">Invest Smart</p>
           <p className="mt-2 gray fs-normal fw-400 mb-3">

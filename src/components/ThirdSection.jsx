@@ -2,7 +2,7 @@ import illustration from "../assets/Illustrations2.png";
 
 const ThirdSection = () => {
   return (
-    <div className="container flex flex-nowrap">
+    <div className="container flex sm-column g-3">
       <div className="left flex-1">
         <img src={illustration} alt="illustration-icon" />
       </div>

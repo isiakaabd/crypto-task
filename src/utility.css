@@ -76,6 +76,10 @@
 .none {
   display: none;
 }
+.lg-hidden {
+  display: none;
+}
+
 .block {
   display: block;
 }

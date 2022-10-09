@@ -3,15 +3,15 @@ import illustration from "./../assets/illustration.png";
 
 const UpperSection = () => {
   return (
-    <div className="container flex mt-3">
+    <div className="container flex mt-3 sm-column">
       <div className="left flex-1">
         <div className="flex br-32 p-1 g-1 max-365  align-center clr-white fs-normal p-1 bg-light-dark">
-          <span className="line-3 fw-500 br-32 bg-white  clr-primary p-save text-upper">
+          <span className="fw-500 br-32 bg-white  clr-primary p-save text-upper">
             75% save
           </span>
           <p className="fw-400  clr-white  ">for the Black Friday weekend</p>
         </div>
-        <h1 className="fs-heading fw-700 line-67">
+        <h1 className="fs-heading fw-700 ">
           Fastest & secure platform to invest in Crypto
         </h1>
         <p className="mt-2 fs-normal gray mx-435 fw-400">
