@@ -3,7 +3,10 @@ import illustration from "./../assets/illustration.png";
 
 const UpperSection = () => {
   return (
-    <div className="container flex mt-3 sm-column">
+    <div
+      className="container flex mt-3 sm-column"
+      style={{ paddingTop: "10rem" }}
+    >
       <div className="left flex-1">
         <div className="flex br-32 p-1 g-1 max-365  align-center clr-white fs-normal p-1 bg-light-dark">
           <span className="fw-500 br-32 bg-white  clr-primary p-save text-upper">

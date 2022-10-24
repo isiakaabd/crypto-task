@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className="top flex justify-between g-3 py-6">
+        <div className="top flex sm-column sm-align-center justify-between g-3 py-6">
           <div className="crappo flex-2">
             <a
               className="flex  ff-inter fw-600 fs-medium align-center fw-600 fs-medium g-1"
@@ -22,7 +22,7 @@ const Footer = () => {
               CRAPPO
             </a>
           </div>
-          <div className="flex-2 nav-links">
+          <div className="flex-2 nav-links sm-text-center">
             <p className="fs-input fw-500 line-4 mb-2">Quick Links</p>
             <li>
               <a href="#">Home</a>
@@ -41,7 +41,7 @@ const Footer = () => {
             </li>
           </div>
 
-          <div className="flex-2 resources-links">
+          <div className="flex-2 resources-links sm-text-center">
             <p className="fs-input fw-500 line-4 mb-2">Resources Links</p>
             <li>
               <a href="#"> Download Whitepapper</a>
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between py-3">
+        <div className="flex justify-between align-center py-3">
           <p className="fw-400 fs-normal ">©2021 CRAPPO. All rights reserved</p>
           <div className="flex justify-between g-2">
             <img src={facebook} alt="facebook" />

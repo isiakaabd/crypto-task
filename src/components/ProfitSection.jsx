@@ -3,7 +3,7 @@ import Table from "../assets/Table.png";
 const ProfitSection = () => {
   return (
     <div className="bg-secondary py-6">
-      <div className="container flex g-3">
+      <div className="container flex g-3   sm-column">
         <div className="left flex flex-column justify-center g-2 flex-1">
           <p className="fw-700 fs-large">
             Grow your profit and track your investments

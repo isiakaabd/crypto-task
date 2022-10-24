@@ -4,19 +4,45 @@ import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 const Header = () => {
-  const [state, setState] = useState(true);
+  const [state, setState] = useState(false);
+
   const handleClick = () => setState(!state);
+
   return (
-    <header className="bg-primary">
-      <div className="container flex align-center justify-between">
-        <a className="flex align-center ff-inter fw-600 fs-medium g-2" href="#">
+    <header data-visible={state} className="bg-primary relative header  ">
+      <div className="container flex align-center sm-flex-column sm-align-start justify-between  sm-justify-start">
+        <div
+          className="flex align-center ff-inter fw-600 fs-medium g-2"
+          href="#"
+        >
           <img src={logo} /> CRAPPO
-        </a>
-        <nav className="primary-nav ml-auto flex align-center sm-none">
+        </div>
+        {!state ? (
+          <BiMenu
+            size={30}
+            aria-controls="primary-navigation"
+            className=" mobile-toggle"
+            aria-expanded="false"
+            onClick={handleClick}
+          />
+        ) : (
+          <FaTimes
+            size={30}
+            aria-controls="primary-navigation"
+            className=" mobile-toggle"
+            aria-expanded="true"
+            onClick={handleClick}
+          />
+        )}
+
+        <nav className="sm-width-100 ">
+          {/* /* primary-nav flex align-center*/}
           <ul
-            aria-label="nav-list"
+            aria-label="primary-navigation"
+            id="primary-navigation"
             role="list"
-            className="nav-list  flex align-center g-2 flex-nowrap"
+            data-visible={state}
+            className="nav-list  flex align-center g-2 flex-nowrap sm-flex-column"
           >
             <li className="fs-normal fw-400">
               <a href="#">Products</a>
@@ -42,20 +68,6 @@ const Header = () => {
             </div>
           </ul>
         </nav>
-        {/* <div className="ml-auto lg-hidden sm-show "> */}
-        {state ? (
-          <BiMenu
-            size={30}
-            className="position-relative sm-show"
-            onClick={handleClick}
-          />
-        ) : (
-          <FaTimes
-            size={30}
-            onClick={handleClick}
-            className="position-relative sm-show"
-          />
-        )}
       </div>
     </header>
   );

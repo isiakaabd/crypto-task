@@ -3,7 +3,7 @@ import baseImage from "../assets/Statistic.png";
 const DetailsSection = () => {
   return (
     <div className="bg-secondary py-6">
-      <div className="container flex g-6">
+      <div className="container flex g-6 g-3 sm-column">
         <div className="left  flex-2">
           <img src={baseImage} alt="Statistic-img" />
         </div>

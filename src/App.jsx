@@ -24,12 +24,11 @@ function App() {
       <FifthSection />
       <SixthSection />
       <MarketSection />
-      <div style={{ display: "none" }}>
-        <DetailsSection />
-        <ProfitSection />
-        <Mining />
-        <Footer />
-      </div>
+      <DetailsSection />
+      <ProfitSection />
+      <Mining />
+      <Footer />
+      <div style={{ display: "none" }}></div>
     </>
   );
 }
