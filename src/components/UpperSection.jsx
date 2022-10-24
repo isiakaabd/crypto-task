@@ -1,5 +1,5 @@
-import logo from "./../assets/Arrow-Right.png";
-import illustration from "./../assets/illustration.png";
+import logo from "../assets/illustration.png";
+import illustration from "../assets/illustration.png";
 
 const UpperSection = () => {
   return (

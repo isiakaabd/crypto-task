@@ -4,7 +4,6 @@ import bitcoin from "../assets/bitcoin.png";
 import litecoin from "../assets/litecoin.png";
 import etherum from "../assets/etherum.png";
 
-// "../../assets/bitcoin.png";
 const SixthSection = () => {
   return (
     <div

@@ -1,7 +1,7 @@
 import MiniCard from "./Utilities/MiniCard";
-import Base from "../../src/assets/Base.png";
-import country from "../../src/assets/country.png";
-import Icon from "../../src/assets/Icon.png";
+import Base from "../assets/Base.png";
+import country from "../assets/country.png";
+import Icon from "../assets/Icon.png";
 
 const SecondSection = () => {
   return (

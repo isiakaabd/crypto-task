@@ -1,12 +1,12 @@
-import logo from "./../assets/logo.png";
-import bitcoin from "./../assets/Bitcoin-black.png";
-import visa from "./../assets/Visa.png";
-import master from "./../assets/Mastercard.png";
-import twitter from "./../assets/twitter.png";
-import youtube from "./../assets/youtube.png";
-import instagram from "./../assets/instagram.png";
-import linkedin from "./../assets/linkedin.png";
-import facebook from "./../assets/linkedin.png";
+import logo from "../assets/logo.png";
+import bitcoin from "../assets/Bitcoin-black.png";
+import visa from "../assets/Visa.png";
+import master from "../assets/Mastercard.png";
+import twitter from "../assets/twitter.png";
+import youtube from "../assets/youtube.png";
+import instagram from "../assets/instagram.png";
+import linkedin from "../assets/linkedin.png";
+import facebook from "../assets/linkedin.png";
 
 const Footer = () => {
   return (

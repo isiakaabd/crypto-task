@@ -1,5 +1,3 @@
-import React from "react";
-
 const MainCard = () => {
   return (
     <div className="mx-auto mx-942 bg-white clr-primary p-2 br-top sm-p4 pb-0">
